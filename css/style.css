@@ -1,0 +1,197 @@
+html {
+	font-size: 10px;
+	font-family: 'Baloo', cursive;
+	color: #333;
+}
+
+/* стили для главного екрана*/
+
+section#main {
+	height: 100vh;
+	background: url(../img/main.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+	text-align: center;
+}
+
+.main-header {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.main-header h1 {
+	font-size: 4rem;
+	text-transform: uppercase;
+	margin-bottom: 2rem;
+
+}
+
+.main-header p {
+	font-size: 2rem;
+	line-height: 1.5;
+	margin-top: 3rem;
+}
+.main-line {
+	height: 3px;
+	width: 100%;
+	display: block;
+	background: #fff;
+}
+
+.main-arrow {
+	width: 3rem;
+	height: 3rem;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	position: absolute;
+	left: 50%;
+	bottom: 10%;
+}
+
+
+section#portfolio {
+	padding-bottom: 5rem;
+	padding-top: 5rem;
+
+}
+.portfolio-header{
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.portfolio-works {
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+
+
+}
+
+.portfolio-box {
+	display: inline-block;
+	width: 33.33%;
+	text-align: center;
+}
+
+.portfolio-box img {
+	width: 100%;
+	max-width: 280px;
+}
+
+.portfolio-box a {
+	text-align: center;
+	display: block;
+	margin-top: 2rem;
+	text-decoration: none;
+	color: #555;
+	font-size: 2rem;
+}
+
+.container {
+	font-size: 0;
+	width: 95%;
+	max-width: 1170px;
+	margin : 0 auto;
+}
+
+footer {
+	background-color: #646464;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	text-align: center;
+	color: #fff;
+	font-style: 10px;
+}
+
+footer a {
+	color: #fff;
+}
+.footer-info, .social, .feedback {
+	display: inline-block;
+	width: 33.33%;
+	vertical-align: top;
+}
+
+.footer-info, .social, .feedback {
+	font-size: 1.5rem;
+}
+
+.footer-head {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+
+}
+
+.social img {
+	width: 2rem;
+	height: 2rem;
+}
+
+.social .vk {
+	width: 1rem;
+}
+
+.social a  {
+	margin-left: 1rem;
+	border: 1px solid #fff;
+	display: inline-block;
+	width: 6rem;
+	height: 6rem;
+	vertical-align: middle;
+	border-radius: 50%;
+	line-height: 7rem;
+}
+
+.footer-btn {
+	display: inline-block;
+	padding: 1rem 2rem;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	text-decoration: none;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	
+}
+
+.footer-btn:hover {
+	color: #555;
+	background-color: #fff;
+}
+
+
+@media(max-width: 768px){
+	html {
+		font-size: 9px;
+	}
+	.container {
+		width: 95%;
+	}
+	.portfolio-box, .footer-info, .social, .feedback {
+		width: 100%;
+	}
+	.portfolio-box {
+		margin-top: 3rem;
+	}
+	.footer-info, .social, .feedback {
+		margin-top: 5rem;
+	}
+}
+
+@media(max-width: 480px){
+	html {
+		font-size: 8px;
+	}
+
+}
+
+@media(max-width: 900px){
+	.portfolio-box{
+		padding: 1rem;
+	}
+}
